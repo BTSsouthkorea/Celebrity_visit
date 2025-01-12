@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="celeb.css">
+    <link rel="icon" type="images/x-icon" href="./images/640px-BTS_logo_(2017).png" />
+    <title>Apply for a Celebrity Vacation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand ms-3" href="index.html"><img src="./images/R.jpeg" alt="Celebrity Visit Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#celebrities">Celebrities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="application.html">Apply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Application Form Section -->
+    <section id="application" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <div class="form-logo"> <img src="./images/R.jpeg" alt="Celebrity Visit Logo"> </div>
+                <h2 class="stylish-font">Apply for a Celebrity Vacation</h2>
+                <p>Complete the form below to apply for a vacation with your favorite celebrity. We look forward to
+                    making your dream vacation a reality!</p>
+            </div>
+            <form action="https://formspree.io/f/myzzlagr" method="POST">
+                <div class="row">
+                    <div class="col-md-6"> <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6"> <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select id="nationality" class="form-control" name="country" required>
+                            <option value="" disabled selected>Select Nationality</option>
+                        </select>
+                        <input type="text" id="otherNationality" name="country2" class="form-control mt-2"
+                            placeholder="Other Nationality" style="display: none;">
+                    </div>
+                    <div class="col-md-6">
+                        <select id="occupation" name="job" class="form-control" required>
+                            <option value="" disabled selected>Select Job Occupation</option>
+                        </select>
+                        <input type="text" name="job2" id="otherOccupation" class="form-control mt-2"
+                            placeholder="Other Job Occupation" style="display: none;">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6"> <select class="form-control" name="celeb" required>
+                            <option value="" disabled selected>Select Celebrity</option>
+                            <option value="celebrity1">Kim Nam-joon(김남준)</option>
+                            <option value="celebrity2">Kim Seok-jin(김석진)</option>
+                            <option value="celebrity3">Min Yoon-gi(민윤기)</option>
+                            <option value="celebrity3">Kim Tae-hyung(김태형)</option>
+                            <option value="celebrity3">Jeon Jung-kook(전정국)</option>
+                            <option value="celebrity3">Park Ji-min(박지민)</option>
+                            <option value="celebrity3">PENDIN....</option> <!-- Add more celebrities as needed -->
+                        </select> </div>
+                    <div class="col-md-6"> <input type="text" name="date" class="form-control"
+                            placeholder="Preferred Dates (e.g., June 1-5, 2025)" required> </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12"> <textarea class="form-control" name="reason" rows="5" placeholder="We kindly request that you provide the reason for your visit, as well as additional information about yourself. This will enable us to tailor your experience to better meet your needs. Thank you."
+                            required></textarea> </div>
+                </div>
+                <div class="text-center"> <button type="submit" class="btn btn-gradient">Submit Application</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>About Us</h5>
+                    <p>We connect fans with their favorite BTS celebrities, providing unique and memorable experiences.
+                        Join
+                        us as we create magical moments and share our love for music with the world.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white">Home</a></li>
+                        <li><a href="index.html#about" class="text-white">About Us</a></li>
+                        <li><a href="index.html#celebrities" class="text-white">Celebrities</a></li>
+                        <li><a href="application.html" class="text-white">Apply</a></li>
+                        <li><a href="index.html#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/bangtan.official?mibextid=ZbWKwL"
+                                class="text-white">Facebook</a></li>
+                        <li><a href="https://x.com/BTS_twt?t=jsiUicLlfvSZAhFgv71IMw&s=09" class="text-white">Twitter</a>
+                        </li>
+                        <li><a href="https://www.instagram.com/bts.bighitofficial?igsh=eGZydzV3ZnE2aDg1"
+                                class="text-white">Instagram</a></li>
+                        <li><a href="https://youtube.com/@bts?si=T1x3E-gNWPUCmt1d" class="text-white">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2025 Celebrity Visit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
